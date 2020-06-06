@@ -13,14 +13,6 @@ public class Article {
     private Timestamp createdAt;
     private Timestamp updatedAt;
 
-    protected Article() {}
-
-    public Article(String title, int categoryId, String content) {
-        this.title = title;
-        this.categoryId = categoryId;
-        this.content = content;
-    }
-
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
